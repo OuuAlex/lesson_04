@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .required{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" id="singUp-form">
+        <label>
+            Email <samp class="required">*</samp>
+            <input required type="email" placeholder="Vvedite email...">
+        </label>
+        <br>
+        <label>
+            Password <samp class="required">*</samp>
+            <input required type="password" placeholder="Vvedite porol...">
+        </label>
+        <br>
+            Vash vozrost:
+            <br>
+            <input id="age1" type="radio" name="age" value="0-18">
+            <label for="age1">0 - 18</label>
+            <br>
+            <input id="age2" type="radio" name="age" value="19-50">
+            <label for="age2">19 - 50</label>
+            <br>
+            <input id="age3" type="radio" name="age" value="50+">
+            <label for="age3">50+</label>
+            <br>
+            <label>
+                sposob sviazi s vami:
+                <select name="contact" form="singUp-form">
+                    <option value="phone">Po telefonu</option>
+                    <option value="email">Po email</option>
+                    <option value="whatsapp">Whatsapp</option>
+                </select>
+            </label>
+        <br>
+    <input type="color" id="favorite_color" name="color"
+           value="#e66465">
+    <label for="favorite_color">Любимый цвет</label>
+    <br>
+    <input type="range" id="friends_count" name="friends"
+           min="0" max="500">
+    <label for="friends_count">Количество друзей</label>
+    <br>
+    <input type="date" id="birth_date" name="birthDate"
+           value="2000-01-01"
+           min="1900-01-01" max="2020-01-01">
+    <label for="birth_date">Дата рождения</label>
+    <br>
+        Soglasny li vi s uslovijami?
+        <br>
+        <input type="checkbox" id="agree1" name="agree_advertising" value="Yes">
+        <label for="agree1">Soglasen na reklamu</label>
+        <br>
+        <input type="checkbox" id="agree2" name="agree_terms" value="Yes">
+        <label for="agree2">Soglasen s uslovijami obrobotki dannyh</label>
+        <br>
+        <input type="submit" value="Sohranit">
+    </form>
+</body>
+</html>
